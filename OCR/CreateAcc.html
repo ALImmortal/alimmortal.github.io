@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Sign Up</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:50%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: center;
+    width: 50%;
+    font-weight: bold;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 10px;
+    margin-top: 3px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 50%;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 50%;
+    }
+}
+</style>
+<center>
+    <br>
+    <br>
+    <br>
+<body class="w3-blue">
+    <div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="Convert.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Convert</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Download</a>
+    <a href="Login.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Login/Sign Up</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="Convert.html" class="w3-bar-item w3-button w3-padding-large">Convert</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Login/Sign Up</a>
+  </div>
+</div>
+<!--Creating account section-->
+<center><h2>Create an Account</h2></center>
+<center><p> You can actually login with your Google Account to make things faster!</p></center>
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <label><h3>Email</h3></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label><h3>Password</h3></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label><h3>Repeat Password</h3></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <br>
+    <input type="checkbox" checked="checked"> Remember me
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+  </center>
+</form>
+
+</body>
+</html>

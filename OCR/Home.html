@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>OCR Conversion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="Convert.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Convert</a>
+    <a href="Download.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Download</a>
+    <a href="Login.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Login/Sign Up</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="Convert.html" class="w3-bar-item w3-button w3-padding-large">Convert</a>
+    <a href="Download.html" class="w3-bar-item w3-button w3-padding-large">Download</a>
+    <a href="Login.html" class="w3-bar-item w3-button w3-padding-large">Login/Sign Up</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo"><strong>OCR Conversion</strong></h1>
+  <p class="w3-xlarge">Convert Image files into Text/Word files</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><a href="Convert.html">Get Started</a></button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <a><img src="http://www.flexigrant.com/wp-content/uploads/2016/08/question-mark-300x300.png" style="width:300px; height:300px;"></a>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>What's the Problem?</h1>
+      <h5 class="w3-padding-32">You are someone looking for a way to simplify time and work needed to get text from a file.</h5>
+
+      <p class="w3-text-grey">  Imagine as a student, you missed a class and you ask your friend for their notes. They send it over to you, a screenshot of their notes. You want to add some extra notes to it but thats when you realize: you can't type in notes into that screenshot. Now, you are constantly thinking if you should type all the notes your friend gave you into a Word Document and include your own notes, or print it out and write notes on the side. This is definitely a lot of work, especially when you don't have much time to type it up.</p>  
+      <p class="w3-text-grey">Businesses and many offices, also, may need to get text specifically from documents that are faxed or scanned into image files. It is inconvenient if they have to retype every single character into a new document. It will be very convenient if they can just get all the text from the file and be able to edit it from there, without retyping all the information.</p>
+      <p class="w3-text-grey">This is why we have OCR.</p>
+
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>What is OCR?</h1>
+      <h5 class="w3-padding-32">OCR stands for Optical Character Recognition.</h5>
+
+      <p class="w3-text-grey">It is a method of obtaining text from an image file or a file where copying the text is difficult. OCR recognizes the text in an image file, takes it and returns you the actual text. The text is not as a screenshot of where the text is, but the actual machine-encoded text, which you can copy and paste.
+      </p>
+      
+    </div>
+
+    <div class="w3-third w3-center">
+      <a href="/gif/-tz8Xbn" title=""><img src="https://i.makeagif.com/media/10-02-2017/tz8Xbn.gif" alt="" style="width:370px; height=230px;"></a>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Check out our <a  href="https://github.com/um96/CapstoneOCR">GitHub</a> page for more information.</h1>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
