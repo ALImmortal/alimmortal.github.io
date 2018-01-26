@@ -6,5 +6,5 @@
   <p>Listed below are projects I have worked on so far:</p>
 </center>
 <strong>OCR Conversion</strong>: <a href="https://alimmortal.github.io/OCR/Home.html">alimmortal.github.io/OCR/Home.html</a>
-Project Portion: Website
-Contributors: Anne Liang
+<p>Project Portion: Website</p>
+<p>Contributors: Anne Liang</p>
