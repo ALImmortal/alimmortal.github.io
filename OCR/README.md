@@ -1,14 +1,12 @@
-# ALImmortal's Github Page
+# OCR Conversion Information Page
 <center>
-  <h1>Welcome to my Github page!</h1>
-  <p>I have experience in Java and C++ but I have been focusing on Web Development.</p>
-  <p>Listed below are projects I have worked on:</p>
+  <h1>Welcome to he Info page for m OCR Conversion Project!</h1>
+  <p>This project was started on September 2017 and is still being edited to be more effective.</p>
 </center>
 OCR Conversion: <a href="https://alimmortal.github.io/Home.html">alimmortal.github.io/Home.html</a>
 
 <strong>Project: OCR Conversion</strong>
 Project Portion: Website
-Contributors: Anne Liang
 
 Main Webpages of Website:
 - Home.html
