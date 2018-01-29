@@ -34,7 +34,9 @@ p {
 
 img {
   /* Set max width to be 100% of the containing element */
-  max-width: 100%;
+  padding-top: 50px;
+  max-width: 90%;
+  max-height: 40%;
 }
 
 h1 {
