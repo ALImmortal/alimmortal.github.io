@@ -4,11 +4,8 @@
   <h1>Welcome to he Info page for m OCR Conversion Project!</h1>
   <p>This project was started on September 2017 and is still being edited to be more effective.</p>
 </center>
-OCR Conversion: <a href="https://alimmortal.github.io/Home.html">alimmortal.github.io/Home.html</a>
-=======
-# ALImmortal's Github Page
+
 OCR Conversion: <a href="https://alimmortal.github.io/OCR/Home.html">alimmortal.github.io/OCR/Home.html</a>
->>>>>>> fbe84277450d19f4b7cd13b35adebaa40db0a4d0
 
 <strong>Project: OCR Conversion</strong>
 Project Portion: Website
