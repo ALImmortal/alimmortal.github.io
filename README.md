@@ -1,4 +1,3 @@
-
 <center>
   <h1>Welcome to my Github page!</h1>
   <p>My name is Anne Liang and I am currently studying Computer Science at Hunter College.</p>
