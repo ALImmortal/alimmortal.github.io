@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+
 # OCR Conversion Information Page
 <center>
-  <h1>Welcome to he Info page for m OCR Conversion Project!</h1>
+  <h1>Welcome to the Info page for my OCR Conversion Project!</h1>
   <p>This project was started on September 2017 and is still being edited to be more effective.</p>
 </center>
 
