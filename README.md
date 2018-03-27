@@ -8,4 +8,5 @@
 <p>Project Portion: Website</p>
 <p>Contributors: Anne Liang</p>
 <p><strong>Project Description</strong>: Optical Character Recognition used to help users extract text from images.</p>
+<p>Thank you!</p>
 
