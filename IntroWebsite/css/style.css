@@ -25,6 +25,7 @@ main {
 p {
   /* Set font color to be the hex code 333333 */
   color: #333333;
+  margin: 25px;
 }
 
 .faded {
