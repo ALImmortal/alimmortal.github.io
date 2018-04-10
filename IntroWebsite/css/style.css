@@ -6,7 +6,7 @@ body {
 }
 
 body.resume {
-  line-height: 1.5em;
+  font-size: 2em;
   font-family: 'Calibri', sans-serif;
   margin-left: 10px;
   margin-right: 10px;
