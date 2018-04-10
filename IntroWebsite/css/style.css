@@ -5,6 +5,13 @@ body {
   background: skyblue;
 }
 
+body.resume {
+  line-height: 1.5em;
+  font-family: 'Calibri', sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 header {
   text-align: center;
   margin-top: 15px;
