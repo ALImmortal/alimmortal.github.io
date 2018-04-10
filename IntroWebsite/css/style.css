@@ -125,22 +125,7 @@ body.l {
   line-height: 1;
   position: relative;
 }
-#logo:after {
-  content:"Anne's GitHub Page!";
-  position: absolute;
-  left: 8px;
-  top: 32px;
-}
-#logo:after {
-  /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
-  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
-  background-size: 4px 4px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -5;
-  display: block;
-  text-shadow: none;
-}
+
 #menu {
   width: 1090px;
   height: 42px;
@@ -174,17 +159,13 @@ body.l {
   position: relative;
   z-index: 1;
   background-size: 4px 4px;
-    box-shadow: 
-        0 0 0 1px rgba(0,0,0,.4) inset, 
-        0 0 20px -5px rgba(0,0,0,.4),
-        0 0 0px 3px #FFF inset;
 }
 #menu li:hover {
     width: 203px;
     margin: 0 -5px;
 }
 #menu a:hover {
-  color: #d90075;
+  color: skyblue;
 }
 #menu li:after,
 #menu li:before {
