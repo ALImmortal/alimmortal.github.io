@@ -8,8 +8,6 @@ body {
 body.resume {
   font-size: 2em;
   font-family: 'Calibri', sans-serif;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 header {
@@ -47,7 +45,7 @@ img {
   max-height: 40%;
 }
 
-h1 
+h1 {
   padding-bottom: 5px;
   border-bottom-style: solid;
   border-bottom-width: 5px;
