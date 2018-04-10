@@ -15,10 +15,6 @@ header {
   text-align: center;
 }
 
-header.quote {
-  font-family: 'Lora', serif;
-}
-
 main {
   /* Set maximum width to be 800 pixels */
   /* Set margin to be automatically calculated on all sides */
@@ -33,6 +29,12 @@ p {
   color: #333333;
   margin: 25px;
   font-family: 'Open Sans', sans-serif;
+}
+
+p.quote {
+  font-family: 'Lora', serif;
+  line-height: 2em;
+  text-align: center;
 }
 
 .faded {
