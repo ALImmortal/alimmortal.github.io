@@ -15,7 +15,7 @@ header {
   text-align: center;
 }
 
-.quote {
+header.quote {
   font-family: 'Lora', serif;
 }
 
