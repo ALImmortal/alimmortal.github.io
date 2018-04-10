@@ -7,7 +7,7 @@ body {
 
 header {
   text-align: center;
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 main {
@@ -65,6 +65,7 @@ footer {
   margin: 0px;
   overflow: hidden;
   background-color: #333;
+  display: block;
 }
 
 .topnav a {
