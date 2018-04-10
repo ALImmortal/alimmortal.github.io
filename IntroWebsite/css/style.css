@@ -3,7 +3,7 @@ body {
   /* Set font family to be Helvetica or Arial */
   /* Set line height to be 1.5 times larger than default */ 
   margin: 0px;
-  font-family: Helvetica;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5em;
   background: skyblue;
 }
