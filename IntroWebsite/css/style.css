@@ -35,6 +35,8 @@ p.quote {
   font-family: 'Lora', serif;
   line-height: 2em;
   text-align: center;
+  font-style: italic;
+  color: white;
 }
 
 .faded {
