@@ -15,6 +15,10 @@ header {
   text-align: center;
 }
 
+.quote {
+  font-family: 'Lora', serif;
+}
+
 main {
   /* Set maximum width to be 800 pixels */
   /* Set margin to be automatically calculated on all sides */
