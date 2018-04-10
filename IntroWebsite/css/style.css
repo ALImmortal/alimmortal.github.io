@@ -62,6 +62,7 @@ footer {
 }
 
 .topnav {
+  margin: 0px;
   overflow: hidden;
   background-color: #333;
 }
