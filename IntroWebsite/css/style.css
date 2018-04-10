@@ -126,6 +126,13 @@ body.l {
   position: relative;
 }
 
+#logo:after {
+  content:"Anne's GitHub Page!";
+  position: absolute;
+  left: 8px;
+  top: 32px;
+}
+
 #menu {
   width: 1090px;
   height: 42px;
