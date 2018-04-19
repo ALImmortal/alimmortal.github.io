@@ -9,6 +9,10 @@ body.resume {
   font-family: 'Calibri', sans-serif;
 }
 
+li{
+  font-size: 12px;
+}
+
 header {
   text-align: center;
   margin-top: 15px;
@@ -39,7 +43,7 @@ p.quote {
 }
 
 img {
-  padding-top: 50px;
+  padding-top: 60px;
   max-width: 90%;
   max-height: 40%;
 }
@@ -53,7 +57,7 @@ h1 {
 }
 
 h2 {
-  color: #e51b24;
+  color: black;
   font-family: 'Open Sans', sans-serif;
 }
 
