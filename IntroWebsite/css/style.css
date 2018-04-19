@@ -42,6 +42,7 @@ img {
   padding-top: 50px;
   max-width: 90%;
   max-height: 40%;
+  display: block;
 }
 
 h1 {
@@ -79,7 +80,6 @@ footer {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: block;
 }
 
 .topnav a:hover {
