@@ -140,8 +140,14 @@ img {vertical-align: middle;}
 }
 
 /* Position the "next button" to the right */
+.prev {
+  left: 10;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 10;
   border-radius: 3px 0 0 3px;
 }
 
