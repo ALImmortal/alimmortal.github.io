@@ -2,7 +2,7 @@ body {
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5em;
-  background: skyblue;
+  background: #89CFF0;
 }
 
 body.resume {
@@ -106,7 +106,7 @@ footer {
 @media (max-width: 600px) {
 
   body {
-    background: red;
+    background: #89CFF0;
     color: white; 
   }
 
