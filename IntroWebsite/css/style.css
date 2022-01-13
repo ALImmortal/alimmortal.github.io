@@ -3,6 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5em;
   background: #89CFF0;
+  font-size: 12px;
 }
 
 body.resume {
