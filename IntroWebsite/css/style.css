@@ -30,6 +30,12 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
+li {
+  color: #333333;
+  margin: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 p.quote {
   font-family: 'Lora', serif;
   line-height: 2.5em;
