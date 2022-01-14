@@ -17,7 +17,7 @@
 	<body background=" alimmortal.github.io/IntroWebsite/img/bg-small.jpg ">
 		<header>
 			<h1>Anne Liang's GitHub</h1>
-			<center><img src="Profile Icon.png" alt="That's Me!"></center>
+			<center><img src="Profile Icon.png" alt="That's Me!" style="width:400px;height:400px;"></center>
 		</header>
 
 		<main>
@@ -27,6 +27,48 @@
 				Check out my projects, resume, or just get to know more about me!
 			</p>
 			</center>
+	<div class="row"> 
+	  <div class="column">
+	    <img src="IntroWebsite/img/20170119110715.JPG" style="width:100%">
+	    <img src="IntroWebsite/img/20170413225010.JPG" style="width:100%">
+	    <img src="IntroWebsite/img/CentralPark.JPG" style="width:100%">
+	    <img src="IntroWebsite/img/CentralPark.JPG" style="width:100%">
+	    <img src="IntroWebsite/img/IMG_20190903_150333.jpg" style="width:100%">
+	    <img src="IntroWebsite/img/IMG_20190904_133641.jpg" style="width:100%">
+	  </div>
+	  <div class="column">
+	    <img src="IntroWebsite/img/IMG_20190902_130556.jpg" style="width:100%">
+	    <img src="IntroWebsite/img/IMG_20190902_151214.jpg" style="width:100%">
+	    <img src="IntroWebsite/img/IMG_20190902_155722.jpg" style="width:100%">
+	    <img src="IntroWebsite/img/IMG_20190903_122725.jpg" style="width:100%">
+	    <img src="IntroWebsite/img/IMG_20190904_132155.jpg" style="width:100%">
+	  </div>  
+	</div>
+
+	<script>
+		//For the photos
+		var elements = document.getElementsByClassName("column");
+		var i;
+
+		function two() {
+		  for (i = 0; i < elements.length; i++) {
+		    elements[i].style.msFlex = "50%";  // IE10
+		    elements[i].style.flex = "50%";
+		  }
+		}
+
+		// Add active class to the current button (highlight it)
+		var header = document.getElementById("myHeader");
+		var btns = header.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		    var current = document.getElementsByClassName("active");
+		    current[0].className = current[0].className.replace(" active", "");
+		    this.className += " active";
+		  });
+		}
+	</script>
+
 		</main>
 	</body>
 </html>

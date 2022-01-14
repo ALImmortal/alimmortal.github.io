@@ -18,16 +18,44 @@
   </header>
   
   <body>
-	    <p>Listed are the projects/hackathons I have completed:</p>
-	    <ol>
-		    <li><p>ADit - Together We Hack Hackathon</p></li>
-	      <p>Theme: How can we use computer science and coding to better our world?"</p>
-	      <p>AT&T theme: How to target advertisements to the right group of people?</p>
-		    <p>Advertisements:</p>
-		    <p>Their goal: To sell you something. Well, what if you don't want to see this kind of advertisement or something catches your eye but by the time you leave the page and try to look for it again, it's gone...</p>
-		    <p>As a team, our goal was to make a Google Chrome extension that allow users to customize the type of advertisements they want to view when scrolling through a webpage. This not only helps users avoid seeing advertisements they are not interested in, but customize the type of advertisements to their liking. Users have an option to save advertisements to view for later and can also use our extension to explore through certain advertisements they thought they wouldn't be interested in.</p>
-		    <li><p><a href="../OCR/Home.html">OCR Conversion</a></p></li>
-		    <p>Tired of typing the text one by one? Copy & Paste doesn't do the job?</p>
-	      <p> This is a website where users are allowed to get text from images using OCR. OCR means "Optical Character Recognition", which is where text is recognized on an image and is given to you in actual text, so you can save time without having to retype the text.</p>
+  	<button class="accordion">ADit - Together We Hack Hackathon</button>
+<div class="panel">
+  <p>Theme: How can we use computer science and coding to better our world?"</p>
+  <p>AT&T theme: How to target advertisements to the right group of people?</p>
+  <p>Advertisements:</p>
+  <p>Their goal: To sell you something. Well, what if you don't want to see this kind of advertisement or something catches your eye but by the time you leave the page and try to look for it again, it's gone...</p>
+  <p>As a team, our goal was to make a Google Chrome extension that allow users to customize the type of advertisements they want to view when scrolling through a webpage. This not only helps users avoid seeing advertisements they are not interested in, but customize the type of advertisements to their liking. Users have an option to save advertisements to view for later and can also use our extension to explore through certain advertisements they thought they wouldn't be interested in.</p>
+</div>
+
+<button class="accordion">OCR Conversion</button>
+<div class="panel">
+   <p><a href="../OCR/Home.html">Link</a></p>
+   <p>Tired of typing the text one by one? Copy & Paste doesn't do the job?</p>
+   <p> This is a website where users are allowed to get text from images using OCR. OCR means "Optical Character Recognition", which is where text is recognized on an image and is given to you in actual text, so you can save time without having to retype the text.</p>
+</div>
+
+<button class="accordion">Others</button>
+<div class="panel">
+  <p><a href ="https://github.com/ALImmortal">To My Github Page!</p>
+  <p>There are other things I have worked on: solving coding problems and assignments I have worked on throughout college. It helps me work on improving my coding skills.</p>
+</div>
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.display === "block") {
+	      panel.style.display = "none";
+	    } else {
+	      panel.style.display = "block";
+	    }
+	  });
+	}
+</script>
+		   
   </body>
 </html>
