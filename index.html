@@ -1,74 +1,138 @@
-<!DOCTYPE html> <!--Identifier for browsers to understand that this is a HTML5 file-->
+<!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	<div class="topnav">
-		<a href="index.html">Home</a>
-		<a href="IntroWebsite/Projects.html">Projects</a>
-		<a href="IntroWebsite/Resume.html">Resume</a>
-		<a href="IntroWebsite/About.html">About</a>
-	</div>
-
-	<head>
-		<link rel="stylesheet" type="text/css" href="IntroWebsite/css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-		<title>Welcome!</title>
-	</head>
-	<body background=" alimmortal.github.io/IntroWebsite/img/bg-small.jpg ">
-		<header>
-			<h1>Anne Liang's GitHub</h1>
-			<center><img src="Profile Icon.png" alt="That's Me!" style="width:400px;height:400px;"></center>
-		</header>
-
-		<main>
-			<center>
-				<h1>Welcome to my GitHub Page!</h1>
-			<p>
-				Check out my projects, resume, or just get to know more about me!
-			</p>
-			</center>
-	<div class="row"> 
-	  <div class="column">
-	    <img src="IntroWebsite/img/20170119110715.JPG" style="width:100%">
-	    <img src="IntroWebsite/img/20170413225010.JPG" style="width:50%">
-	    <img src="IntroWebsite/img/CentralPark.JPG" style="width:50%">
-	    <img src="IntroWebsite/img/CentralPark.JPG" style="width:50%">
-	    <img src="IntroWebsite/img/IMG_20190903_150333.jpg" style="width:50%">
-	    <img src="IntroWebsite/img/IMG_20190904_133641.jpg" style="width:50%">
-	  </div>
-	  <div class="column">
-	    <img src="IntroWebsite/img/IMG_20190902_130556.jpg" style="width:50%">
-	    <img src="IntroWebsite/img/IMG_20190902_151214.jpg" style="width:50%">
-	    <img src="IntroWebsite/img/IMG_20190902_155722.jpg" style="width:50%">
-	    <img src="IntroWebsite/img/IMG_20190903_122725.jpg" style="width:50%">
-	    <img src="IntroWebsite/img/IMG_20190904_132155.jpg" style="width:50%">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Anne L's Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <!--For icons-->
+    <script src="https://kit.fontawesome.com/93dd6e662d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+	  
+    <div class="container">
+	  
+	<!--────────────────Header───────────────-->
+	<header>
+		<nav>	
+		 <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link active" href="#home">Home</a></li>
+      <li><a class="nav-link" href="#about">About</a></li>
+			<li><a class="nav-link" href="#projects">Projects</a></li>
+			<li><a class="nav-link" href="#contact">Contact</a></li>
+		 </ul>
+			
+		  <div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+		  <h3>Anne L.<hr></h3>
+		  <p>*Currently looking for Work</p>
+		  <p>*Computer Science major looking for a Backend Software Enginnering job.</p>
+			  
+		  <!--────To next page─────-->
+			 
+		  <div class="icon">
+			  <a href="#about"><i class="fa-solid fa-user"></i></a>
+		  </div>
+			 <p>About Me</p>
+		 </section> 
 	  </div>  
-	</div>
 
-	<script>
-		//For the photos
-		var elements = document.getElementsByClassName("column");
-		var i;
+    <!--──────────────About────────────────-->
+	  <div id="about">
+		  <!--────Icon links─────-->
+		  <h3>About Me<hr></h3>
+      <p> <img src = "Images/Profile Icon.png" width = "200" height = "200"></p>
+		  <p>Hi, my name is Anne and I am a Computer Science major looking to pursue a career in backend software engineering.</p>
+      <p>I have learned backend programming with the using C++ as my main language but also have experience in using C and Java. I also enjoy web developing, mainly learning cool features that HTML/CSS/Javascript can provide, it's awesome isn't it?</p>
+      <p>In my spare time, I like to follow up with a favorite show or book. I also love to travel around the city, as I love to take photos of events and food that's on the trend, just ;ike you see on this background. I took this one specifically!</p>
+      <!--────To next page─────-->			 
+		  <div class="icon">
+			  <a href="#projects"><i class="fa-solid fa-folder"></i></a>
+		  </div>
+			 <p>Projects</p>
+		</div>
+    
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects"> 
+		 <h3>My Projects<hr></h3>
+		  <p>Here are some projects I completed, enjoy!</p>
+		  <div class="work-box">
+		  <div class="work">
+		<!--───────────────card───────────────-->
+			<div class="card">
+			  <img class="work-img" src="Images/slot.jpg">
+			  <a href="casino.html"> <!--Link to project-->
+				<div class="work-content">Casino Guessing Number Game</div></a>
+      </div>
+			<div class="card">
+			  <img class="work-img" src="Images/tictactoe.jpg">
+				<a href="tictactoe.html"> <!--Link to project-->
+				  <div class="work-content">Tic Tac Toe</div></a>
+      </div>
+      <div class="card">
+			  <img class="work-img" src="Images/takeout.jpg">
+				<a href="takeout.html"> <!--Link to project-->
+				  <div class="work-content">Decide My Takeout - Asian Edition</div></a>
+      </div>
+      <div class="card">
+			  <img class="work-img" src="Images/teddy.jpg">
+				<a href="mrteddy.html"> <!--Link to project-->
+				  <div class="work-content">Mr. Teddy!</div>
+        </a>
+      </div> 
+			<div class="card">
+			    <img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
+				<a href="https://github.com/ALImmortal/alimmortal.github.io/tree/master/OCR"> <!--Link to project-->
+				<div class="work-content">OCR Conversion</div></a>
+            </div>
+			<div class="card">
+			    <img class="work-img" src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+				<a href="https://github.com/jolizbeth/AFS"> <!--Link to project-->
+				<div class="work-content">AT&T Hackathon</div></a>
+            </div> 	  
+		  </div>
+		  </div>
+	  </div>
+		 
+<!--──────────────Contact────────────────-->
+	  <div id="contact">
+		  <!--────Icon links─────-->
+		   <h3>Got a Question?<hr></h3>
+		   <p>Please visit the links below for more information.</p>
+		    <div class="icon">
+        <div class = "tooltip">
+			    <a href="https://github.com/ALImmortal"><i class='fab fa-github'></i>
+            <span class="tooltiptext">Github</span>
+          </a>
+        </div>
+        <div class = "tooltip">
+			    <a href="https://www.linkedin.com/in/anne-liang/"><i class='fab fa-linkedin-in'></i>
+            <span class="tooltiptext">LinkedIn</span>
+          </a>
+        </div>
+        <div class = "tooltip">
+			    <a href="https://replit.com/@AnneLiang"><i class="fa-solid fa-code"></i>
+            <span class="tooltiptext">Repl.it</span>
+          </a>
+        </div>
+		  </div>
+		</div>
 
-		function two() {
-		  for (i = 0; i < elements.length; i++) {
-		    elements[i].style.msFlex = "50%";  // IE10
-		    elements[i].style.flex = "50%";
-		  }
-		}
-
-		// Add active class to the current button (highlight it)
-		var header = document.getElementById("myHeader");
-		var btns = header.getElementsByClassName("btn");
-		for (var i = 0; i < btns.length; i++) {
-		  btns[i].addEventListener("click", function() {
-		    var current = document.getElementsByClassName("active");
-		    current[0].className = current[0].className.replace(" active", "");
-		    this.className += " active";
-		  });
-		}
-	</script>
-
-		</main>
-	</body>
+	</main>
+	  
+  </div>
+  </body>
 </html>
