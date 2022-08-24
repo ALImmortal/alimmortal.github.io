@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<title>Upload File</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="Convert.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Convert</a>
+    <a href="Download.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Download</a>
+    <a href="Login.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Login/Sign Up</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo"><strong>OCR Conversion</strong></h1>
+  <p style="font-family:verdana";><font size="+2">Please select a file to convert (Files include PNG and JPEG files)</font></p>
+    <font font face="verdana" size="+2">Select image to upload:</font>
+    <br>
+    <img src="" height="300" alt="Image preview...">
+    <br>
+    <br>
+    
+
+    <!-- Allowing user to upload photos-->
+    <script>
+      function previewFile() {
+        var preview = document.querySelector('img');
+        var file    = document.querySelector('input[type=file]').files[0];
+        var reader  = new FileReader();
+
+        reader.addEventListener("load", function () {
+          preview.src = reader.result;
+        }, false);
+
+        if (file) {
+          reader.readAsDataURL(file);
+        }
+
+      }
+    </script>   
+    
+    <!--Convert Image using Tesseract JS-->
+    <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+    <script>
+      function progressUpdate(packet){
+        var log = document.getElementById('log');
+        if(log.firstChild && log.firstChild.status === packet.status){
+          if('progress' in packet){
+            var progress = log.firstChild.querySelector('progress')
+            progress.value = packet.progress
+          }
+        }else{
+          var line = document.createElement('div');
+          line.status = packet.status;
+          var status = document.createElement('div')
+          status.className = 'status'
+          status.appendChild(document.createTextNode(packet.status))
+          line.appendChild(status)
+          if('progress' in packet){
+            var progress = document.createElement('progress')
+            progress.value = packet.progress
+            progress.max = 1
+            line.appendChild(progress)
+          }
+          if(packet.status == 'done'){
+            var pre = document.createElement('pre')
+            pre.appendChild(document.createTextNode(packet.data.text))
+            line.innerHTML = ''
+            line.appendChild(pre)
+          }
+          log.insertBefore(line, log.firstChild)
+        }
+      }
+      function recognizeFile(file){
+        document.querySelector("#log").innerHTML = ''
+        Tesseract.recognize(file, {
+          lang: document.querySelector('#langsel').value
+        })
+          .progress(function(packet){
+            console.info(packet)
+            progressUpdate(packet)
+          })
+          .then(function(data){
+            console.log(data)
+            progressUpdate({ status: 'done', data: data })
+          })
+      }
+    </script>
+<!--Languages-->
+  <select id="langsel" onchange="window.lastFile && recognizeFile(window.lastFile)">
+    <option value='eng'     selected> English                </option>
+  </select>
+
+<input type="file" onchange="recognizeFile(window.lastFile=this.files[0]); previewFile()">
+
+<div id="log"></div>
+
+<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><a href="Result.html">Upload Image</a></button>
+
+
+<style>
+#log > div {
+    color: #313131;
+    border-top: 1px solid #dadada;
+    padding: 9px;
+    display: flex;
+}
+#log > div:first-child {
+    border: 0;
+}
+.status {
+  min-width: 250px;
+}
+#log {
+    border: 1px solid #dadada;
+    padding: 10px;
+    margin-top: 20px;
+    min-height: 100px;
+}
+
+progress {
+    display: block;
+    width: 100%;
+    transition: opacity 0.5s linear;
+}
+progress[value="1"] {
+    opacity: 0.5;
+}
+</style>
+ 
+
+</header>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Check out our <a  href="https://github.com/um96/CapstoneOCR">GitHub</a> page for more information.</h1>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

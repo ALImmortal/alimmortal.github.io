@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>Login/Sign Up</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+form {
+    border: 1px solid #f1f1f1;
+}
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+button:hover {
+    opacity: 0.8;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.container {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+    margin-right: 10px;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       width: 50%;
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<body class="w3-blue">
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="Convert.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Convert</a>
+    <a href="Download.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Download</a>
+    <a href="Login.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Login/Sign Up</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="Convert.html" class="w3-bar-item w3-button w3-padding-large">Convert</a>
+    <a href="Download.html" class="w3-bar-item w3-button w3-padding-large">Download</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Login/Sign Up</a>
+  </div>
+</div>
+
+<form action="/action_page.php">
+  <center>
+    <br>
+  <div>
+    <br>
+    <br>
+    <br>
+    <label><h3>Username</h3></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><h3>Password</h3></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+       <br>
+       <br> 
+      <button type="submit" ><a href="OCR_websitehome.html">Login</a></button>
+    <br/>
+    <input type="checkbox" checked="checked"><strong>Remember me</strong>
+  </div>
+  <center>
+    <html lang="en">
+  <head>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="626398017147-7s581dp3np6hr9j5js22mdksai9u3oge.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+    </script>
+  </body>
+</html>
+  </center>
+
+    <span class="psw" style="font-family:verdana"><a href="CreateAcc.html"> New user? </a></span>
+    <span class="psw" style="font-family:verdana"><a href="#">Forgot password?</a></span>
+</center>
+
+</center>
+</form>
+
+</body>
+</html
